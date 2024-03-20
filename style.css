@@ -1,0 +1,356 @@
+:root{
+  --veryDarkBlue:hsl(243, 87%, 12%);
+  --desaturatedBlue: hsl(238, 22%, 44%);
+  --brightBlue: hsl(224, 93%, 58%);
+  --moderateCyan:hsl(170, 45%, 43%);
+  --lightGrayishBlue: hsl(240, 75%, 98%);
+  --lightGray: hsl(0, 0%, 75%);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  width: 100vw;
+ 
+}
+.container{
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+nav{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 55px;
+}
+nav img{
+  width: 150px;
+}
+nav ul {
+  text-align: right;
+  display: flex;
+  gap: 25px;
+}
+nav ul li a{
+  color: #000;
+  font-size: 14px;
+}
+.mid{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 55px ;
+}
+.mid .text{
+  flex-basis: 50%;
+  padding: 25px;
+}
+.mid .text h1{
+  font-size:42px ;
+  line-height: 1.4em;
+  margin-bottom: 18px;
+}
+.mid .text p{
+  font-size: 16px;
+  line-height: 1.3em;
+  margin-bottom: 18px;
+  text-align: left;
+}
+.mid .text .form{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap:10px ;
+}
+.mid .text .form input{
+  outline: none;
+  border:.4px solid var(--veryDarkBlue);
+  padding: 10px;
+  border-radius: 2px;
+}
+.mid .text .form input::placeholder{
+  font-size: 12px;
+  color: var(--lightGray);
+}
+.mid .text .form button{
+  outline: none;
+  border:none;
+  padding: 8px 45px;
+  font-size: 13px;
+  background:var(--brightBlue) ;
+  color: var(--lightGrayishBlue);
+  border-radius:2px;
+  
+}
+.mid img{
+  width: 50%;
+  padding: 5px;
+}
+.end{
+  display: flex;
+  gap: 0;
+  padding: 0;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.end .desktop,.mobile{
+  width: 100%;
+}
+.end .desktop{
+  display: block;
+}
+
+.end .mobile {
+  display: none;
+}
+.end .card {
+  width: 100%;
+  background: #F8F8FE;
+  display: flex;
+  justify-content: space-between;
+  padding: 110px 55px;
+}
+.end .card .text{
+  padding: 25px;
+}
+.end .card .text h1{
+  font-size: 40px;
+}
+.end .card .illustration-2{
+  width: 42%;
+  height: 100%;
+  
+}
+.end .card .text{
+  width: 50%;
+}
+.card .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.card .text .head p{
+  font-size: 16px;
+  margin: 30px 0 20px 0;
+}
+.card .text .linkbox{
+ width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3px 0;
+  border-bottom: 1px solid var(--moderateCyan);
+}
+.linkbox h3{
+  text-align: center;
+  font-size: 16px;
+  margin-right: 5px;
+  margin-bottom: 3px;
+  color:var(--moderateCyan) ;
+}
+.linkbox h3:hover{
+  opacity: .7;
+}
+.card .text .linkbox button{
+  background: transparent;
+  border: none;
+  outline: none;
+  text-align: center;
+  /* display: none; */
+  height: fit-content;
+  width: fit-content;
+}
+.card .text .detailbox{
+  
+  width:300px;
+  background: #fff;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 18px;
+  padding: 20px;
+  margin: 30px 0;
+  box-shadow: 0 2px 20px #dedede;
+  border-radius:5px;
+  
+}
+.detailbox p{
+  font-size: 11px;
+  line-height:1.75em ;
+  
+}
+.detailbox .quote{
+  width: 15px;
+  height: 100%;
+}
+.detailbox .employ{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.detailbox .employ img{
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+.employ .man p{
+  font-size: 8px;
+}
+.employ .man h3{
+  font-size: 12px;
+}
+
+
+
+.mailsection{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding:75px ;
+  background: var(--desaturatedBlue);
+}
+.mailsection .textbox{
+  width: 50%;
+  color: #fff;
+  padding: 35px;
+}
+.mailsection .textbox h1{
+  margin-bottom: 20px;
+}
+.mailsection .textbox p{
+  line-height: 1.47em;
+  padding-right: 120px;
+ font-size: 13px;
+ color: var(--lightGrayishBlue);
+}
+.mailsection .form{
+  width: 50%;
+  display: flex;
+  gap:8px ;
+  flex-direction: column;
+  padding:20px 65px 0 65px ;
+}
+.mailsection .form input{
+  width: 70%;
+  padding: 10px 40px;
+  background: #fff;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  text-align: left;
+}
+.mailsection .form input::placeholder{
+  color: var(--lightGray);
+}
+
+.mailsection .form button {
+  width: 200px;
+  outline: none;
+  border:none;
+  padding: 13px 45px;
+  font-size: 12px;
+  background:var(--brightBlue) ;
+  color: var(--lightGrayishBlue);
+  border-radius:2px;
+}
+footer {
+  width:100%;
+  padding: 68px 30px;
+  background: var(--veryDarkBlue);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  
+  
+  
+}
+.first{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding-right: 70px;
+  gap: 10px;
+}
+
+.first .phone,.email{
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.first .phone p,.email p{
+  color: var(--lightGrayishBlue);
+}
+.first .logo{
+  width:170px;
+}
+.first > img{
+  background: #fff;
+  background-clip: text;
+  -webkit-background-clip:text;
+  color: #fff;
+}
+.second ul,.third ul{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+.second ul li,.third ul li{
+  color: var(--lightGrayishBlue);
+  font-size: 15px;
+}
+.second ul li:hover,.third ul li :hover{
+  color: var(--desaturatedBlue);
+}
+.third ul li:hover{
+  color: var(--desaturatedBlue);
+}
+footer .social{
+  display: flex;
+  gap:8px ;
+}
+footer .social .fa-brands{
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  background: transparent;
+  color: var(--lightGrayishBlue);
+  border: 1px solid var(--lightGrayishBlue);
+  border-radius: 50%;
+  
+}
+
+ul li a ,h1 ,ul li,button,h3,input,input::placeholder{
+  font-family: "Raleway", sans-serif;
+}
+button ,h1,h3{
+  font-weight: 700;
+}
+input,input::placeholder,ul li,ul li a{
+  font-weight: 400;
+}
+
+p{
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
