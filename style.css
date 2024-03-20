@@ -338,6 +338,10 @@ footer .social .fa-brands{
   border-radius: 50%;
   
 }
+footer .social .fa-brands:hover{
+  color:var(--brightBlue);
+  border-color:var(--brightBlue);
+}
 
 ul li a ,h1 ,ul li,button,h3,input,input::placeholder{
   font-family: "Raleway", sans-serif;
